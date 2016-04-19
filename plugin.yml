@@ -1,0 +1,16 @@
+name: EzDoors
+main: me.smurfy129.doors.Main
+depend: [WorldEdit]
+version: 1.0
+description: Doors triggered by proximity
+
+commands:
+  doors:
+    description: doors
+
+permissions:
+  doors:
+    description: Allows the player to use the doors command
+    default: op
+
+
