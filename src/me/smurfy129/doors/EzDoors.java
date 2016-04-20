@@ -174,10 +174,12 @@ public class EzDoors {
 				}
 			}
 		}
+		
 		if(counter == 1) {
 			counter = 0;
 			return;
 		}
+		
 		Main.plugin.getServer().getScheduler().scheduleSyncDelayedTask(Main.plugin, new Runnable() {
 			public void run() {
 				setWall(player, oldMaterial, wallIndex);

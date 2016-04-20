@@ -25,7 +25,14 @@ public class CmdExecutor implements CommandExecutor{
 		Player player = (Player) sender;
 		
 		if(args.length == 0) {
-			player.sendMessage(ChatColor.RED + "Wrong arguments. Try /doors <setwall | new | setcuboid> <name>");
+			player.sendMessage(ChatColor.AQUA + "  Welcome to the EzDoors commands!");
+			player.sendMessage(ChatColor.GRAY + "Author: " + ChatColor.AQUA + "Nicholas Ionata");
+			player.sendMessage(ChatColor.GRAY + "Version: " + ChatColor.AQUA + plugin.pdf.getVersion());
+			player.sendMessage(ChatColor.GRAY + "------------------------------------");
+			player.sendMessage(ChatColor.AQUA + "/doors new <name> " + ChatColor.GRAY + "- Creates a new door");
+			player.sendMessage(ChatColor.AQUA + "/doors setwall <name> " + ChatColor.GRAY + "- Sets the door region");
+			player.sendMessage(ChatColor.AQUA + "/doors setwall <name> " + ChatColor.GRAY + "- Sets the door trigger region");
+
 			return false;
 		}
 
