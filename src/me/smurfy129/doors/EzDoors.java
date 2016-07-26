@@ -50,7 +50,7 @@ public class EzDoors {
 		if(s.getLength() < 2) {
 			player.sendMessage(ChatColor.RED + "Before setting the setoffs you have to select two points!");
 			return;
-		}
+		}asdafs
 
 		Location pos1 = s.getMaximumPoint();
 		Location pos2 = s.getMinimumPoint();

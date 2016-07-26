@@ -35,9 +35,13 @@ public class DoorsListener implements Listener {
 		for(int i = 1; i <= counter; i++ ) {
 			CuboidSelection cs = Main.plugin.EDoors.positionArray.get(i);
 			if(cs.contains(e.getTo()) && !cs.contains(e.getFrom())) {
+				Main.plugin.getServer().broadcastMessage("1");
 				if(!(Main.plugin.EDoors.wallsInUse.contains(i))) {
+					Main.plugin.getServer().broadcastMessage("2");
 					Main.plugin.EDoors.setWall(player, Material.AIR, i - 1);
+					Main.plugin.getServer().broadcastMessage("3");
 					Main.plugin.EDoors.wallsInUse.add(i);
+					Main.plugin.getServer().broadcastMessage("4");
 				}
 			}
 		}
