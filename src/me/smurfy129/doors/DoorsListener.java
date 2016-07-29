@@ -38,7 +38,7 @@ public class DoorsListener implements Listener {
 				Main.plugin.getServer().broadcastMessage("1");
 				if(!(Main.plugin.EDoors.wallsInUse.contains(i))) {
 					Main.plugin.getServer().broadcastMessage("2");
-					Main.plugin.EDoors.setWall(player, Material.AIR, i - 1);
+					Main.plugin.EDoors.setWall(player, Material.AIR, i);
 					Main.plugin.getServer().broadcastMessage("3");
 					Main.plugin.EDoors.wallsInUse.add(i);
 					Main.plugin.getServer().broadcastMessage("4");
