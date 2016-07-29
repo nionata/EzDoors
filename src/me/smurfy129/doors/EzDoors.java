@@ -177,18 +177,17 @@ public class EzDoors {
 		
 		if(counter == 1) {
 			counter = 0;
+			int i = wallsInUse.indexOf(wallIndex + 1);
+			wallsInUse.remove(i);
 			return;
 		}
+	
 		
 		Main.plugin.getServer().getScheduler().scheduleSyncDelayedTask(Main.plugin, new Runnable() {
 			public void run() {
 				setWall(player, oldMaterial, wallIndex);
 			}
 		}, 20L);
-		counter++;
-		
-		int i = wallsInUse.indexOf(wallIndex + 1);
-		wallsInUse.remove(i);
-		Bukkit.broadcastMessage(wallsInUse.size() + "");
+		counter++;		
 	}
 }

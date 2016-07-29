@@ -17,6 +17,7 @@ public class Main extends JavaPlugin{
 	public void onEnable() {
 		
 		this.getCommand("doors").setExecutor(new CmdExecutor(this));
+		this.getCommand("d").setExecutor(new CmdExecutor(this));
 		
 		plugin = this;
 		EDoors = new EzDoors (this);
