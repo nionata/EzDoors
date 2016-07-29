@@ -50,7 +50,7 @@ public class EzDoors {
 		if(s.getLength() < 2) {
 			player.sendMessage(ChatColor.RED + "Before setting the setoffs you have to select two points!");
 			return;
-		}asdafs
+		}
 
 		Location pos1 = s.getMaximumPoint();
 		Location pos2 = s.getMinimumPoint();
@@ -146,6 +146,8 @@ public class EzDoors {
 			CuboidSelection cs = new CuboidSelection(Bukkit.getWorld("world"), pos1, pos2);
 			positionArray.put(i + 1, cs);
 		}
+		
+			Main.plugin.getServer().broadcastMessage("Position array: " + positionArray.size());
 	}
 	
 	public ArrayList<Integer> wallsInUse = new ArrayList<Integer>();

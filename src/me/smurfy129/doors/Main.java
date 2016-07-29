@@ -27,6 +27,7 @@ public class Main extends JavaPlugin{
 		SettingsManager.getDoors();
 		
 		myLog.info(String.format("[%s] has been enabled!", getDescription().getName()));
+	
 	}
 
 	public void onDisabel() {
